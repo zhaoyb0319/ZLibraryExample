@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用控件宽高显示图片(默认)"/>
+
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:onClick="widgetClick"
+                android:src="@drawable/ic_launcher"/>
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="强制显示原图(可能OOM)"/>
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="widgetClick"
+                android:src="@drawable/ic_launcher"/>
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加载过程中自定义显示过程(基础设置)"/>
+
+        <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="widgetClick"
+                android:src="@drawable/ic_launcher"/>
+
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用view显示图片"/>
+
+        <View
+                android:id="@+id/imageView4"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:onClick="widgetClick"
+                android:background="@android:color/darker_gray"/>
+
+        <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="widgetClick"
+                android:text="保存网络图片到本地"/>
+
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="widgetClick"
+                android:text="移除网络图片从本地"/>
+    </LinearLayout>
+
+</ScrollView>
